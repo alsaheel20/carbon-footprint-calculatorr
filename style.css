@@ -1,0 +1,108 @@
+/* Carbon Footprint Calculator */
+:root {
+  --forest-green: #245b3b;
+  --leaf-green: #4f8b50;
+  --soft-green: #eef5ec;
+  --text: #26352b;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: #f7faf6;
+}
+
+.page-section {
+  min-height: 100vh;
+  padding: 70px 7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-section {
+  padding: 20px 28px 20px 0;
+}
+
+h1 {
+  color: var(--forest-green);
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.12;
+  margin-bottom: 18px;
+}
+
+h2 {
+  color: var(--leaf-green);
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
+  font-weight: 600;
+  margin-bottom: 22px;
+}
+
+p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 22px;
+}
+
+h4 {
+  color: var(--forest-green);
+  font-size: 1.45rem;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 12px;
+}
+
+.nature-image {
+  width: 100%;
+  height: 490px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 16px 38px rgba(27, 65, 38, 0.16);
+}
+
+.calculate-button {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  padding: 11px 30px;
+  font-size: 1.05rem;
+  border-radius: 7px;
+  margin-top: 2px;
+}
+
+.calculate-button:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+.calculator-card {
+  background: var(--soft-green);
+  border-left: 5px solid var(--leaf-green);
+  border-radius: 12px;
+  padding: 24px 28px;
+}
+
+.calculator-card h3 {
+  color: var(--forest-green);
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.calculator-card p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 991.98px) {
+  .page-section {
+    padding: 38px 6%;
+  }
+
+  .text-section {
+    padding-right: 0;
+  }
+
+  .nature-image {
+    height: 340px;
+  }
+}
